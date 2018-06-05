@@ -119,11 +119,8 @@ client.on('message', message => {
         break;
 
         case "-cat":
-        var embedcat = new Discord.RichEmbed()
-        .setColor(0x954D23)
-        .setTitle("Kitku dla " + message.author.username + " :cat:")
-       .addField(cat[Math.floor(Math.random() * cat.length)])
-        message.channel.send(embedcat);
+        message.channel.send(cat[Math.floor(Math.random() * cat.length)]);
+        break;
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
