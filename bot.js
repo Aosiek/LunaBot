@@ -48,9 +48,7 @@ var help = [
 ]
 
 client.on("ready", () => {
-  client.user.setActivity(`on ${client.guilds.size} servers`);
-  console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
-});
+client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
 
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
