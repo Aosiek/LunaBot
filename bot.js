@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
-var bot = new Discord.Client({
-    autorun: true,
 });    
 
 var meow = [
@@ -51,12 +49,11 @@ var help = [
     "-cytat - mądrości mojego ludu",
 ]
 
-bot.on('ready', () => {
-    console.log('Hi~');
-    bot.user.setActivity("Gryzę, nie tykać");
+client.on("ready", () => {
+    client.user.setGame("with my code");
 });
 
-bot.on('message', message => {
+client.on('message', message => {
     if (message.author.equals(client.user)) return;
 
     if (!message.content.startsWith(PREFIX)) return;
