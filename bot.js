@@ -41,13 +41,28 @@ var pytania = [
 var help = [
     "```Lista komend:",
     "-ping - sprawdź, czy żyję",
+    "-pong - sprawdź, czy żyję, znowu",
     "-info - wyświetla informacje o mnie",
     "-help - wyświetla listę komend",
     "-meow - może zamiauczę, spróbuj",
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
+    "-cat - pokażę Ci małe kotki ( ͡° ͜ʖ ͡°)",
     "-cytat - mądrości mojego ludu```",
-]
+];
+
+var cat = [
+    "https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
+    "http://i.imgur.com/QcbA2bh.gif",
+    "https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif",
+    "https://media.giphy.com/media/9JLQKmspQAMWQ/giphy.gif",
+    "https://media.giphy.com/media/l41lTn1liPDzkv0Zi/giphy.gif",
+    "https://media.giphy.com/media/5HSYaZTcRpYnS/giphy.gif",
+    "https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif",
+    "https://media.giphy.com/media/s4xpWHHGDZ2a4/giphy.gif",
+];
+
+
 
 client.on("ready", () => {
 client.user.setPresence({ game: { name: '-help | -info', type: 0 } });
@@ -64,6 +79,10 @@ client.on('message', message => {
 
         case "-ping":
         message.channel.send("Pong!");
+        break;
+        
+        case "-pong":
+        message.channel.send("Ping");
         break;
 
         case "-info":
@@ -99,6 +118,14 @@ client.on('message', message => {
         message.channel.send(slaps[Math.floor(Math.random() * slaps.length)] + message.mentions.members.first());
         break;
 
+        case "-cat":
+        var embedcat = new Discord.RichEmbed()
+        .setColor(0x954D23)
+        .setTitle("Kitku dla " + message.author.username + " :cat:")
+        .addField((cat[Math.floor(Math.random() * cat.length)] true)
+        message.channel.send({embedcat})
+        break;   
+            
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
 
