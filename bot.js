@@ -55,14 +55,15 @@ var help = [
     "-meow - może zamiauczę, spróbuj",
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
+    "-cytat - mądrości mojego ludu",
 ]
 
-client.on('ready', () => {
+bot.on('ready', () => {
     console.log('Hi~');
-    client.user.setActivity("Gryzę, nie tykać");
+    bot.user.setActivity("Gryzę, nie tykać");
 });
 
-client.on('message', message => {
+bot.on('message', message => {
     if (message.author.equals(client.user)) return;
 
     if (!message.content.startsWith(PREFIX)) return;
@@ -114,4 +115,4 @@ client.on('message', message => {
     };
 });
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
