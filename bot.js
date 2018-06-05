@@ -122,7 +122,7 @@ client.on('message', message => {
         var embedcat = new Discord.RichEmbed()
         .setColor(0x954D23)
         .setTitle("Kitku dla " + message.author.username + " :cat:")
-        .addField((cat[Math.floor(Math.random() * cat.length)] true)
+        .addField((cat[Math.floor(Math.random() * cat.length)])
         message.channel.send({embedcat})
         break;   
             
