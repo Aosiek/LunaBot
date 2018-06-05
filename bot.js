@@ -37,16 +37,6 @@ var pytania = [
     "Całuj me łapki, a nie zadajesz durne pytania",
 ];
 
-var pytania = [
-    "Tak.",
-    "Nie.",
-    "Mooże.",
-    "Chyba kpisz.",
-    "Jak dostanę karmę do żarcia to się zastanowię.",
-    "LOL, jesteś zwykłym randomem, kpisz sobie",
-    "Całuj me łapki, a nie zadajesz durne pytania",
-];
-
 var help = [
     "```List komend:",
     "-ping - sprawdź, czy żyję",
