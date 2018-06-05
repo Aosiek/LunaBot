@@ -3,8 +3,6 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
-});    
-
 var meow = [
     "MeeeEEEEEooooOOOOwwwWWW",
     "MiiiiIIIIaaaaAAAAAAuuuUUU",
