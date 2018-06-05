@@ -50,7 +50,7 @@ var help = [
 ]
 
 client.on("ready", () => {
-client.user.setPresence({ game: { name: 'Sup guys?', type: 0 } });
+client.user.setPresence({ game: { name: '-help | -info', type: 0 } });
 });
 
 client.on('message', message => {
@@ -72,6 +72,7 @@ client.on('message', message => {
         .addField("Nazwa Bota: ", client.user.username, true)
         .addField("Stworzona: ", "15.04.2017", true)
         .addField("Przez:", "@Aoi#5194", true)
+        .addField("Ostatnia aktualizacja:", "05.06.2018 r.", true)
         .setColor(0x33CCCC)
         .setFooter("Witaj ziemska istoto! Jestem LunaBot, potężny imperator ludzkich umysłów. Padnij na kolana przed mym wdziękiem i zachwytem!")
         .setThumbnail(client.user.displayAvatarURL)
