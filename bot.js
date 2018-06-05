@@ -3,6 +3,9 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
+var bot = new Discord.Client({
+    autorun: true,
+});    
 
 var meow = [
     "MeeeEEEEEooooOOOOwwwWWW",
