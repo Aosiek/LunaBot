@@ -48,7 +48,8 @@ var help = [
 ]
 
 client.on("ready", () => {
-    client.user.setActivity({game: {name: "with my code", type: 0}});
+  client.user.setActivity(`on ${client.guilds.size} servers`);
+  console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
 });
 
 client.on('message', message => {
