@@ -3,6 +3,8 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
+
+
 var meow = [
     "MeeeEEEEEooooOOOOwwwWWW",
     "MiiiiIIIIaaaaAAAAAAuuuUUU",
@@ -37,18 +39,25 @@ var pytania = [
 ];
 
 var help = [
-    "```Lista komend:",
+    "```List komend:",
     "-ping - sprawdź, czy żyję",
     "-info - wyświetla informacje o mnie",
     "-help - wyświetla listę komend",
     "-meow - może zamiauczę, spróbuj",
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
-    "-cytat - mądrości mojego ludu```",
+    "-cytat - mądrości mojego ludu",
 ]
 
 client.on("ready", () => {
-client.user.setPresence({ game: { name: 'yourGameGoesHere', type: 0 } });
+    client.user.setPresence({
+        data: {
+             game: {
+                  name: '-help'
+              }
+          }
+      })
+});
 
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
@@ -102,4 +111,4 @@ client.on('message', message => {
     };
 });
 
-client.login(process.env.BOT_TOKEN)
+bot.login(process.env.BOT_TOKEN);
