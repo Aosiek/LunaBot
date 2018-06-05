@@ -69,12 +69,12 @@ client.on('message', message => {
         case "-info":
         var embedinfo = new Discord.RichEmbed()
         .setTitle("Informacje o LunaBot")
-        .addField("Nazwa Bota: ", bot.user.username, true)
+        .addField("Nazwa Bota: ", client.user.username, true)
         .addField("Stworzona: ", "15.04.2017", true)
         .addField("Przez:", "@Aoi#5194", true)
         .setColor(0x33CCCC)
         .setFooter("Witaj ziemska istoto! Jestem LunaBot, potężny imperator ludzkich umysłów. Padnij na kolana przed mym wdziękiem i zachwytem!")
-        .setThumbnail(bot.user.displayAvatarURL)
+        .setThumbnail(client.user.displayAvatarURL)
         message.channel.sendEmbed(embedinfo);
         break;
         
