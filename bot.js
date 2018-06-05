@@ -37,18 +37,18 @@ var pytania = [
 ];
 
 var help = [
-    "```List komend:",
+    "```Lista komend:",
     "-ping - sprawdź, czy żyję",
     "-info - wyświetla informacje o mnie",
     "-help - wyświetla listę komend",
     "-meow - może zamiauczę, spróbuj",
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
-    "-cytat - mądrości mojego ludu",
+    "-cytat - mądrości mojego ludu```",
 ]
 
 client.on("ready", () => {
-    client.user.setGame("with my code");
+    client.user.setActivity({game: {name: "with my code", type: 0}});
 });
 
 client.on('message', message => {
