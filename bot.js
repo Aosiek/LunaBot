@@ -11,7 +11,7 @@ var meow = [
     "NyAAAAAAaaaaan",
     "Nie miauczę na życzenie plebsu.",
     "Bork, bork~! Ups..."
-    "Spadaj, co?"
+    "Spadaj, co?",
 ];
 
 var slaps = [
