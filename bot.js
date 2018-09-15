@@ -54,7 +54,7 @@ var help = [
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
     "-cat - pokażę Ci małe kotki ( ͡° ͜ʖ ͡°)",
-    "-cytat - mądrości mojego ludu"
+    "-cytat - mądrości mojego ludu",
     "-bored - nuuuuuda```",
 ];
 
