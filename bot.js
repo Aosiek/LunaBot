@@ -10,8 +10,8 @@ var meow = [
     "MiiiiIIIIaaaaAAAAAAuuuUUU",
     "NyAAAAAAaaaaan",
     "Nie miauczę na życzenie plebsu.",
-    "Bork, bork~! Ups..."
-    "Spadaj sobie do wulkanu."
+    "Bork, bork~! Ups...",
+    "Spadaj sobie do wulkanu.",
 ];
 
 var slaps = [
