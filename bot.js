@@ -11,6 +11,7 @@ var meow = [
     "NyAAAAAAaaaaan",
     "Nie miauczę na życzenie plebsu.",
     "Bork, bork~! Ups..."
+    "Spadaj, co?"
 ];
 
 var slaps = [
@@ -19,13 +20,16 @@ var slaps = [
     "Prycha na ",
     "Ostrzy pazury na ",
     "Uderza cegłówką owiniętą w plasterek cytryny ",
+    "Liże w nos ",
 ];
 
 var cytat = [
     "Budyń to dobry deser, ale nie sprawdza się jako sanki.",
     "Wielkie ego, mały penis.",
     "LULULULULULULULULULULULULULU(...)LULU.",
-    "Nie poddawaj się! Walcz za swoje marzenia! Co masz do stracenia? NIC! Walcz i nie poddawaj się, walcz o... CZY TO DRAVEN NA BOCIE? OMG, SURR @15."
+    "Nie poddawaj się! Walcz za swoje marzenia! Co masz do stracenia? NIC! Walcz i nie poddawaj się, walcz o... CZY TO DRAVEN NA BOCIE? OMG, SURR @15.",
+    "Hitler nie wiedział o Holokauście.",
+    "Trapy to nic złego.",
 ];
 
 var pytania = [
@@ -36,6 +40,8 @@ var pytania = [
     "Jak dostanę karmę do żarcia to się zastanowię.",
     "LOL, jesteś zwykłym randomem, kpisz sobie",
     "Całuj me łapki, a nie zadajesz durne pytania",
+    "Zastanowię się.",
+    "WSZYSTKO CZEGO DZIŚ CHCĘ...",
 ];
 
 var help = [
@@ -48,7 +54,8 @@ var help = [
     "-slaps - zaczep kogoś",
     "-8ball - zapytaj, a może Ci odpowiem",
     "-cat - pokażę Ci małe kotki ( ͡° ͜ʖ ͡°)",
-    "-cytat - mądrości mojego ludu```",
+    "-cytat - mądrości mojego ludu"
+    "-bored - nuuuuuda```",
 ];
 
 var cat = [
@@ -65,7 +72,7 @@ var cat = [
 
 
 client.on("ready", () => {
-client.user.setPresence({ game: { name: '-help | -info', type: 0 } });
+client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', type: 0 } });
 });
 
 client.on('message', message => {
@@ -121,6 +128,10 @@ client.on('message', message => {
         case "-cat":
         message.channel.send(cat[Math.floor(Math.random() * cat.length)]);
         break;
+            
+        case "-bored":
+        message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc")]);
+        break;    
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
