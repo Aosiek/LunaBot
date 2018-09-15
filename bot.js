@@ -130,8 +130,9 @@ client.on('message', message => {
         break;
             
         case "-bored":
-        message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc")]);
-        break;    
+        message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc");
+        break;
+        
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
