@@ -141,20 +141,41 @@ client.on('message', message => {
 	guild.member(message.author).addRole('506173878662463508');
 	break;
 
+	case "-endlol":
+	message.channel.send("Usunięto rolę League of Legends.");
+	guild.member(message.author).removeRole('506173878662463508');
+	break;
+
 	case "-playdiablo":
 	message.channel.send("Została dodana rola Diablo III! Pokonaj siły zła!");
 	guild.member(message.author).addRole('506173972719730690');
 	break;
 
+	case "-enddiablo":
+	message.channel.send("Usunięto rolę Diablo III.");
+	guild.member(message.author).removeRole('506173972719730690');
+	break;
+
 	case "-playhots":
-	message.channel.send("Została dodana rola Heros of the Storm! Powodzenia w Nexusie!");
+	message.channel.send("Została dodana rola Heroes of the Storm! Powodzenia w Nexusie!");
 	guild.member(message.author).addRole('506174003203932171');
+	break;
+
+	case "-endhots":
+	message.channel.send("Usunięto rolę Heroes of the Storm.");
+	guild.member(message.author).removeRole('506174003203932171');
 	break;
 
 	case "-playfortnite":
 	message.channel.send("Została dodana rola Fortnite!");
 	guild.member(message.author).addRole('506174118111215616');
 	break;
+
+	case "-endfortnite":
+	message.channel.send("Usunięto rolę Fortnite!");
+	guild.member(message.author).removeRole('506174118111215616');
+	break;
+
 
 
             
