@@ -74,7 +74,11 @@ var cat = [
 client.on("ready", () => {
 client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', type: 0 } });
 });
-
+	client.on("guildMemberAdd", function(member)
+{
+	let memberRole = member.guild.roles.find("name", "League of Legends");
+	member.addRole(memberRole);
+});
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
 
