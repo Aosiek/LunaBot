@@ -156,7 +156,7 @@ client.on('message', message => {
 
 	case "-playdiablo":
         message.member.send("Została dodana rola Diablo III! Pokonaj moce zła!!");
-        let memberRole = message.member.guild.roles.find("name, "Diablo III");
+        let memberRole = message.member.guild.roles.find("name", "Diablo III");
 	message.member.addRole(memberRole);
         break;
             
