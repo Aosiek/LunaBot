@@ -78,7 +78,7 @@ client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', ty
 	client.on("guildMemberAdd", function(member)
 {
 	member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-        let memberRole = message.member.guild.roles.find("name, "League of Legends");
+        let memberRole = message.member.guild.roles.find("name", "League of Legends");
 	member.addRole(memberRole);
 });
 
@@ -143,7 +143,7 @@ client.on('message', message => {
             
  	case "-lol":
         message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-        let memberRole = message.member.guild.roles.find("name, "League of Legends");
+        let memberRole = message.member.guild.roles.find("name", "League of Legends");
         break;
 
 
