@@ -138,27 +138,24 @@ client.on('message', message => {
             
 	case "-playlol":
 	message.channel.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-	let memberRole = message.member.guild.roles.find("name", "League of Legends");
-	guild.member(message.author).addRole(memberRole);
+	guild.member(message.author).addRole('506173878662463508');
 	break;
 
 	case "-playdiablo":
 	message.channel.send("Została dodana rola Diablo III! Pokonaj siły zła!");
-	let memberRole = message.member.guild.roles.find("name", "Diablo III");
-	guild.member(message.author).addRole(memberRole);
+	guild.member(message.author).addRole('506173972719730690');
 	break;
 
 	case "-playhots":
 	message.channel.send("Została dodana rola Heros of the Storm! Powodzenia w Nexusie!");
-	let memberRole = message.member.guild.roles.find("name", "Heros of the Storm");
-	guild.member(message.author).addRole(memberRole);
+	guild.member(message.author).addRole('506174003203932171');
 	break;
 
 	case "-playfortnite":
 	message.channel.send("Została dodana rola Fortnite!");
-	let memberRole = message.member.guild.roles.find("name", "Fortnite");
-	guild.member(message.author).addRole(memberRole);
+	guild.member(message.author).addRole('506174118111215616');
 	break;
+
 
             
         default:
