@@ -81,8 +81,10 @@ client.on('message', message => {
     if (!message.content.startsWith(PREFIX)) return;
 
     var args = message.content.substring(PREFIX.lenght).split(" ");
-    var guild = message.guild;
+    
     switch (args[0].toLowerCase()) {
+		    
+	var guild = message.guild;
 
 
         case "-ping":
