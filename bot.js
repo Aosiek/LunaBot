@@ -55,9 +55,16 @@ var help = [
     "-8ball - zapytaj, a może Ci odpowiem",
     "-cat - pokażę Ci małe kotki ( ͡° ͜ʖ ͡°)",
     "-cytat - mądrości mojego ludu",
-    "-bored - nuuuuuda```",
+    "-bored - nuuuuuuuda",
+    "-play(skrót gry) - dodaje rangę",
+    "-end(skrót gry) - usuwa rangę",
+    " ",
+    "Aktualnie dostępne gry (w nawiasach podane skróty do komendy)",
+    "League of Legends (lol)",
+    "Diablo III (diablo)",
+    "Heroes of the Storm (hots)",
+    "Fortnite (fortnite)```",
 ];
-
 var cat = [
     "https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
     "http://i.imgur.com/QcbA2bh.gif",
@@ -101,7 +108,7 @@ client.on('message', message => {
         .addField("Nazwa Bota: ", client.user.username, true)
         .addField("Stworzona: ", "15.04.2017", true)
         .addField("Przez:", "@Aoi#5194", true)
-        .addField("Ostatnia aktualizacja:", "05.06.2018 r.", true)
+        .addField("Ostatnia aktualizacja:", "28.10.2018 r.", true)
         .setColor(0x33CCCC)
         .setFooter("Witaj ziemska istoto! Jestem LunaBot, potężny imperator ludzkich umysłów. Padnij na kolana przed mym wdziękiem i zachwytem!")
         .setThumbnail(client.user.displayAvatarURL)
