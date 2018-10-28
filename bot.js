@@ -138,7 +138,7 @@ client.on('message', message => {
             
 	case "-lol":
 	message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-	guild.member(message.author.toString()).addRole('506173878662463508')
+	guild.member(message.author.toString()).addRole('506173878662463508');
 	break;
             
         default:
