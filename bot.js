@@ -75,7 +75,7 @@ client.on("ready", () => {
 client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', type: 0 } });
 });
 
-});
+
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
 
