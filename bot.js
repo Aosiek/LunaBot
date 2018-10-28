@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
-var guild = message.guild;
+
 
 var meow = [
     "MeeeEEEEEooooOOOOwwwWWW",
@@ -81,6 +81,7 @@ client.on('message', message => {
     if (!message.content.startsWith(PREFIX)) return;
 
     var args = message.content.substring(PREFIX.lenght).split(" ");
+    var guild = message.guild;
     switch (args[0].toLowerCase()) {
 
 
