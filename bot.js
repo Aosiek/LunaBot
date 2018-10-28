@@ -75,21 +75,6 @@ client.on("ready", () => {
 client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', type: 0 } });
 });
 
-	client.on("guildMemberAdd", function(member)
-{
-	member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-        let memberRole = message.member.guild.roles.find("name", "League of Legends");
-	member.addRole(memberRole);
-});
-
-	client.on("guildMemberAdd", function(member2)
-{
-	member2.send("Została dodana rola Diablo III! Pokonaj moce zła!!");
-        let member2Role = message.member2.guild.roles.find("name", "Diablo III");
-	member2.addRole(member2Role);
-});
-
-
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
 
@@ -148,19 +133,10 @@ client.on('message', message => {
         message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc");
         break;
             
- 	case "-playlol":
-        message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
-        let memberRole = message.member.guild.roles.find("name", "League of Legends");
-	message.member.addRole(memberRole);
-        break;
-
-	case "-playdiablo":
-        message.member2.send("Została dodana rola Diablo III! Pokonaj moce zła!!");
-        let member2Role = message.member2.guild.roles.find("name", "Diablo III");
-	message.member2.addRole(member2Role);
-        break;
-            
-        
+	case "-lol":
+	message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
+	guild.member(message.author.toString()).addRole('506173878662463508')
+	break;
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
