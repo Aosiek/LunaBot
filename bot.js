@@ -76,15 +76,15 @@ client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', ty
 });
 
 client.on('message', message => {
+	
     if (message.author.equals(client.user)) return;
 
     if (!message.content.startsWith(PREFIX)) return;
 
     var args = message.content.substring(PREFIX.lenght).split(" ");
-    
+    var guild = message.guild;
     switch (args[0].toLowerCase()) {
 		    
-	var guild = message.guild;
 
 
         case "-ping":
