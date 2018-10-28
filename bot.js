@@ -141,7 +141,7 @@ client.on('message', message => {
         message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc");
         break;
             
- 	case "-lol":
+ 	case "-gram lol":
         message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
         let memberRole = message.member.guild.roles.find("name", "League of Legends");
 	message.member.addRole(memberRole);
