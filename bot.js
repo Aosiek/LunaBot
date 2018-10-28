@@ -82,6 +82,13 @@ client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', ty
 	member.addRole(memberRole);
 });
 
+	client.on("guildMemberAdd", function(member)
+{
+	member.send("Została dodana rola Diablo III! Pokonaj moce zła!!");
+        let memberRole = message.member.guild.roles.find("name", "Diablo III");
+	member.addRole(memberRole);
+});
+
 
 client.on('message', message => {
     if (message.author.equals(client.user)) return;
@@ -147,7 +154,11 @@ client.on('message', message => {
 	message.member.addRole(memberRole);
         break;
 
-
+	case "-playdiablo":
+        message.member.send("Została dodana rola Diablo III! Pokonaj moce zła!!");
+        let memberRole = message.member.guild.roles.find("name, "Diablo III");
+	message.member.addRole(memberRole);
+        break;
             
         
             
