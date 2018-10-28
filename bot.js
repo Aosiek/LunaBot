@@ -136,11 +136,30 @@ client.on('message', message => {
         message.channel.send("https://www.youtube.com/watch?v=SEntHIpylrc");
         break;
             
-	case "-lol":
-	message.member.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
+	case "-playlol":
+	message.channel.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
 	let memberRole = message.member.guild.roles.find("name", "League of Legends");
 	guild.member(message.author).addRole(memberRole);
 	break;
+
+	case "-playdiablo":
+	message.channel.send("Została dodana rola Diablo III! Pokonaj siły zła!");
+	let memberRole = message.member.guild.roles.find("name", "Diablo III");
+	guild.member(message.author).addRole(memberRole);
+	break;
+
+	case "-playhots":
+	message.channel.send("Została dodana rola Heros of the Storm! Powodzenia w Nexusie!");
+	let memberRole = message.member.guild.roles.find("name", "Heros of the Storm");
+	guild.member(message.author).addRole(memberRole);
+	break;
+
+	case "-playfortnite":
+	message.channel.send("Została dodana rola Fortnite!");
+	let memberRole = message.member.guild.roles.find("name", "Fortnite");
+	guild.member(message.author).addRole(memberRole);
+	break;
+
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
