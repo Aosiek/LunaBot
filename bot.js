@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 const PREFIX = "-"
 
-var = guild = message.guild;
+var guild = message.guild;
 
 var meow = [
     "MeeeEEEEEooooOOOOwwwWWW",
