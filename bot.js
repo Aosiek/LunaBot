@@ -63,7 +63,7 @@ var help = [
     "League of Legends (lol)",
     "Diablo III (diablo)",
     "Heroes of the Storm (hots)",
-    "Fortnite (fortnite)```",
+    "Battlerite Royale (brr)```",
 ];
 var cat = [
     "https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
@@ -108,7 +108,7 @@ client.on('message', message => {
         .addField("Nazwa Bota: ", client.user.username, true)
         .addField("Stworzona: ", "15.04.2017", true)
         .addField("Przez:", "@Aoi#5194", true)
-        .addField("Ostatnia aktualizacja:", "28.10.2018 r.", true)
+        .addField("Ostatnia aktualizacja:", "21.03.209 r.", true)
         .setColor(0x33CCCC)
         .setFooter("Witaj ziemska istoto! Jestem LunaBot, potężny imperator ludzkich umysłów. Padnij na kolana przed mym wdziękiem i zachwytem!")
         .setThumbnail(client.user.displayAvatarURL)
@@ -173,13 +173,13 @@ client.on('message', message => {
 	guild.member(message.author).removeRole('506174003203932171');
 	break;
 
-	case "-playfortnite":
-	message.channel.send("Została dodana rola Fortnite!");
+	case "-playbrr":
+	message.channel.send("Została dodana rola Battlerite Royale!");
 	guild.member(message.author).addRole('506174118111215616');
 	break;
 
-	case "-endfortnite":
-	message.channel.send("Usunięto rolę Fortnite!");
+	case "-endbrr":
+	message.channel.send("Usunięto rolę Battlerite Royale!");
 	guild.member(message.author).removeRole('506174118111215616');
 	break;
 
