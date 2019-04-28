@@ -155,7 +155,8 @@ client.on('message', message => {
 
 	case "-endlol":
 	message.channel.send("Usunięto rolę League of Legends.");
-	guild.member(message.author).removeRole(role);
+	const roless = message.guild.roles.find('name', 'League of Legends');
+	guild.member(message.author).removeRole(roless);
 	break;
 
 	case "-playdiablo":
@@ -166,7 +167,8 @@ client.on('message', message => {
 
 	case "-enddiablo":
 	message.channel.send("Usunięto rolę Diablo III."); 
-	guild.member(message.author).removeRole(roles);
+	const rolesss = message.guild.roles.find('name', 'Diablo III');
+	guild.member(message.author).removeRole(rolesss);
 	break;
             
         default:
