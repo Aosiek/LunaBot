@@ -79,8 +79,12 @@ var cat = [
 
 
 client.on("ready", () => {
-client.user.setPresence({ game: { name: '/ᐠ｡ꞈ｡ᐟ✿\ -help | -info', type: 0 } });
+client.user.setPresence({ game: { name: -help | -info', type: 0 } });
 });
+			 
+client.on("guildMemberAdd", function(member){
+			 member.guild.channels.find("name", "moon").sendMessage(member.toString()+ " wbił/a na herbatkę~");
+			}));
 
 client.on('message', message => {
 	
