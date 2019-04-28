@@ -79,7 +79,7 @@ var cat = [
 
 
 client.on("ready", () => {
-client.user.setPresence({ game: { name: -help | -info', type: 0 } });
+client.user.setPresence({ game: { name: '-help | -info', type: 0 } });
 });
 			 
 client.on("guildMemberAdd", function(member){
