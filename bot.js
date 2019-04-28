@@ -84,7 +84,7 @@ client.user.setPresence({ game: { name: '-help | -info', type: 0 } });
 			 
 client.on("guildMemberAdd", function(member){
 			 member.guild.channels.find("name", "moon").sendMessage(member.toString()+ " wbił/a na herbatkę~");
-			}));
+			});
 
 client.on('message', message => {
 	
