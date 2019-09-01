@@ -173,13 +173,13 @@ client.on('message', message => {
 	case "-playtft":
 	message.channel.send("Została dodana rola Team Fight Tactics!");
   	const role2s = message.guild.roles.find('name', 'TFT');
-	guild.member(message.author).addRole(roles);
+	guild.member(message.author).addRole(role2s);
 	break;
 
 	case "-endtft":
 	message.channel.send("Usunięto rolę Team Fight Tactics."); 
 	const role3s = message.guild.roles.find('name', 'TFT');
-	guild.member(message.author).removeRole(rolesss);
+	guild.member(message.author).removeRole(role3s);
 	break;	    
             
         default:
