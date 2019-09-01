@@ -111,7 +111,7 @@ client.on('message', message => {
         .addField("Nazwa Bota: ", client.user.username, true)
         .addField("Stworzona: ", "15.04.2017", true)
         .addField("Przez:", "@Aoi#5194", true)
-        .addField("Ostatnia aktualizacja:", "21.03.209 r.", true)
+        .addField("Ostatnia aktualizacja:", "01.09.209 r.", true)
         .setColor(0x33CCCC)
         .setFooter("Witaj ziemska istoto! Jestem LunaBot, potężny imperator ludzkich umysłów. Padnij na kolana przed mym wdziękiem i zachwytem!")
         .setThumbnail(client.user.displayAvatarURL)
@@ -159,7 +159,7 @@ client.on('message', message => {
 	break;
 
 	case "-playdiablo":
-	message.channel.send("Została dodana rola Diablo III! Pokonaj siły zła!");
+	message.channel.send("Została dodana rola Diablo III!");
   	const roles = message.guild.roles.find('name', 'Diablo III');
 	guild.member(message.author).addRole(roles);
 	break;
