@@ -62,8 +62,7 @@ var help = [
     "Aktualnie dostępne gry (w nawiasach podane skróty do komendy)",
     "League of Legends (lol)",
     "Diablo III (diablo)",
-    "Heroes of the Storm (hots)",
-    "Battlerite Royale (brr)```",
+    "Team Fight Tactics (tft)```",
 ];
 var cat = [
     "https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif",
@@ -170,6 +169,18 @@ client.on('message', message => {
 	const rolesss = message.guild.roles.find('name', 'Diablo III');
 	guild.member(message.author).removeRole(rolesss);
 	break;
+	
+	case "-playtft":
+	message.channel.send("Została dodana rola Team Fight Tactics!");
+  	const roles = message.guild.roles.find('name', 'TFT');
+	guild.member(message.author).addRole(roles);
+	break;
+
+	case "-endtft":
+	message.channel.send("Usunięto rolę Team Fight Tactics."); 
+	const rolesss = message.guild.roles.find('name', 'TFT');
+	guild.member(message.author).removeRole(rolesss);
+	break;	    
             
         default:
         message.channel.send("Jakiś błąd nam się wkradł, czy mi się wydaje?");
