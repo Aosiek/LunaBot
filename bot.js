@@ -147,7 +147,7 @@ client.on('message', message => {
         break;
             
 	case "-playlol":
-	message.channel.send("Została dodana rola League of Legends! Powodzenia na Fields of Justice!");
+	message.channel.send("Została dodana rola League of Legends!");
   	const role = message.guild.roles.find('name', 'League of Legends');
 	guild.member(message.author).addRole(role);
 	break;
